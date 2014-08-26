@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.security.AuthorizationMatrixProperty>
+      <permission>hudson.model.Item.Read:anonymous</permission>
+      <permission>hudson.model.Item.Read:zilong.chen</permission>
+      <permission>hudson.model.Item.Read:raymond.shen</permission>
+      <permission>hudson.model.Item.Read:jeffery.li</permission>
+      <permission>hudson.model.Item.Read:yu.xie</permission>
+      <permission>hudson.model.Run.Update:zilong.chen</permission>
+      <permission>hudson.model.Run.Update:raymond.shen</permission>
+      <permission>hudson.model.Run.Update:jeffery.li</permission>
+      <permission>hudson.model.Run.Update:yu.xie</permission>
+      <permission>hudson.model.Item.Build:anonymous</permission>
+      <permission>hudson.model.Item.Build:zilong.chen</permission>
+      <permission>hudson.model.Item.Build:raymond.shen</permission>
+      <permission>hudson.model.Item.Build:jeffery.li</permission>
+      <permission>hudson.model.Item.Build:yu.xie</permission>
+      <permission>hudson.model.Run.Delete:zilong.chen</permission>
+      <permission>hudson.model.Run.Delete:raymond.shen</permission>
+      <permission>hudson.model.Run.Delete:jeffery.li</permission>
+      <permission>hudson.model.Run.Delete:yu.xie</permission>
+      <permission>hudson.model.Item.Delete:zilong.chen</permission>
+      <permission>hudson.model.Item.Delete:raymond.shen</permission>
+      <permission>hudson.model.Item.Delete:jeffery.li</permission>
+      <permission>hudson.model.Item.Delete:yu.xie</permission>
+      <permission>hudson.model.Item.Configure:zilong.chen</permission>
+      <permission>hudson.model.Item.Configure:raymond.shen</permission>
+      <permission>hudson.model.Item.Configure:jeffery.li</permission>
+      <permission>hudson.model.Item.Configure:yu.xie</permission>
+      <permission>hudson.model.Item.Workspace:anonymous</permission>
+      <permission>hudson.model.Item.Workspace:zilong.chen</permission>
+      <permission>hudson.model.Item.Workspace:raymond.shen</permission>
+      <permission>hudson.model.Item.Workspace:jeffery.li</permission>
+      <permission>hudson.model.Item.Workspace:yu.xie</permission>
+    </hudson.security.AuthorizationMatrixProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty/>
+  </properties>
+  <scm class="hudson.scm.SubversionSCM">
+    <locations>
+      <hudson.scm.SubversionSCM_-ModuleLocation>
+        <remote>https://sami.cdt.int.thomsonreuters.com/svn/idncorebeijing_evai/tags/VAH/VAH_Drop4_05</remote>
+        <local>.</local>
+      </hudson.scm.SubversionSCM_-ModuleLocation>
+    </locations>
+    <excludedRegions></excludedRegions>
+    <includedRegions></includedRegions>
+    <excludedUsers></excludedUsers>
+    <excludedRevprop></excludedRevprop>
+    <excludedCommitMessages></excludedCommitMessages>
+    <workspaceUpdater class="hudson.scm.subversion.UpdateUpdater"/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <customWorkspace>D:\Build\VAH\Drop4\VAH</customWorkspace>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>pushd &quot;%WORKSPACE%\SourceCode\Excutable\Script&quot;&#xd;
+dailybuild.bat --nightly 0.4.5&#xd;
+popd</command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>Package/**/*.zip,Package/**/*.Z</artifacts>
+      <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
+  <buildWrappers/>
+</project>

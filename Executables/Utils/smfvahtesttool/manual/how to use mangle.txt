@@ -1,0 +1,33 @@
+
+
+
+
+
+1. Firstly, to modify the configuration test tool Command file------"smfvahtesttool_package_x64bit\release\commandsfile\RicMangleCommand.xml"
+
+- <ElementEntry>
+            <Name value="ItemName" /> 
+            <DataType value="Buffer" /> 
+            <Data encode="UTF8" value="RAYMOND.BJ" /> // the origin item to be mangled
+- </ElementEntry>
+- <ElementEntry>
+            <Name value="MangleSwitch" /> 
+            <DataType value="UInt8" /> 
+            <Data value="1" />  // enable 'mangle' or reversed it
+- </ElementEntry>
+
+
+
+2. Secondly, to modify the vaa config file---- D:\ThomsonReuters\VAA\vae0\partitioncore0\MangleVAA\conf\masterconfig.xml
+
+- <!-- mangle --> 
+- <EncData>
+- 	<ElementList>
+                <Mask value="0" /> 
+- 		<ElementEntry>
+                	<Name value="RAYMOND.BJ" /> //origin name
+                        <DataType value="Buffer" /> 
+                        <Data encode="UTF8" value="Nancy.BJ" /> //new name after ¡®mangled¡¯
+-               </ElementEntry>
+-       </ElementList>
+- </EncData>

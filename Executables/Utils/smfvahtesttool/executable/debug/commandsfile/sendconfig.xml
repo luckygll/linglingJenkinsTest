@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Message>
+  <MsgBase>
+    <SetID value="30" />
+    <StreamID value="10001" /> <!--value = partition_id + 10001-->
+    <MsgClass value="Update" />
+    <ContainerType value="Map" />
+    <MsgKey>
+      <Mask value="0" />
+      <DomainType value="EvaiConfig" />
+      <NameType value="1" />
+      <NameEncodingType value="0" />
+      <Name value="ocivaa::MASTERCONFIG" />
+      <Qos value="10" />
+      <ServiceID value="100" />
+      <Opaque value="00" />
+    </MsgKey>
+    <Map>
+      <Mask value="7" />
+      <KeyPrimitiveType value="Buffer" />
+      <KeyFieldID value="0" />
+      <ContainerType value="ElementList" />
+      <EncSummaryData>
+        <ElementList>
+          <Mask value="0" />
+          <ElementEntry>
+            <Name value="MainDLL" />
+            <DataType value="Buffer" />
+            <Data encode="UTF8" value="ocivaa" />
+          </ElementEntry>
+          <ElementEntry>
+            <Name value="CheckSum" />
+            <DataType value="Buffer" />
+            <Data encode="UTF8" value="0123456789ABCDEF" />
+          </ElementEntry>
+          <ElementEntry>
+            <Name value="ConfigID" />
+            <DataType value="Buffer" />
+            <Data encode="UTF8" value="2" />
+          </ElementEntry>
+          <ElementEntry>
+            <Name value="TimeStamp" />
+            <DataType value="DateTime" />
+            <Data value="" datevalue="2011-10-18" timeformat="0" timevalue="55242"/>
+          </ElementEntry>
+          <ElementEntry>
+            <Name value="Operator" />
+            <DataType value="Buffer" />
+            <Data encode="UTF8" value="800000" />
+          </ElementEntry>
+          <ElementEntry>
+            <Name value="PriorConfigSet" />
+            <DataType value="Buffer" />
+            <Data encode="UTF8" value="1" />
+          </ElementEntry>
+        </ElementList>
+      </EncSummaryData>
+      <TotalCountHint value="3" />
+      <MapEntry>
+        <Mask value="0" />
+        <Action value="Update" />
+        <PermissionData value="000000" />
+        <EncKey encode="UTF8" value="profile" />
+        <EncData>
+          <ElementList>
+            <Mask value="0" />
+            <ElementEntry>
+              <Name value="name" />
+              <DataType value="Buffer" />
+              <Data encode="UTF8" value="99" />
+            </ElementEntry>
+          </ElementList>
+        </EncData>
+      </MapEntry>
+      <MapEntry>
+        <Mask value="0" />
+        <Action value="Add" />
+        <PermissionData value="000000" />
+        <EncKey encode="UTF8" value="task2" />
+        <EncData>
+          <ElementList>
+            <Mask value="0" />
+            <ElementEntry>
+              <Name value="name" />
+              <DataType value="Buffer" />
+              <Data encode="UTF8" value="NewTask" />
+            </ElementEntry>
+          </ElementList>
+        </EncData>
+      </MapEntry>
+      <MapEntry>
+        <Mask value="0" />
+        <Action value="Delete" />
+        <PermissionData value="000000" />
+        <EncKey encode="UTF8" value="task" />
+        <!--EncData is needed-->
+        <EncData>
+        </EncData>
+      </MapEntry>
+    </Map>
+  </MsgBase>
+  <Mask value="63546" /> <!--from thomas-->
+  <!--<Mask value="16542" />--> <!--original use-->
+  <DataState value="1"/>
+  <UpdateTypeNum value="1"/>
+  <PermissionInfo>
+    <Mask value="0"/>
+    <PE value="333"/>
+  </PermissionInfo>
+  <ItemSeqNum value="0"/>
+  <ExchangeID value="010000"/>
+  <ConstitNum value="2"/>
+  <ConfCount value="13"/>
+  <ConfTime value="20"/>
+  <ReplayItemSeqNum value="23"/>
+</Message>

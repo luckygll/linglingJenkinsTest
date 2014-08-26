@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Message>
+  <MsgBase>
+    <SetID value="30"/>
+    <StreamID value="10001"/>
+    <MsgClass value="Response"/>
+    <ContainerType value="ElementList"/>
+    <MsgKey>
+      <Mask value="0"/>
+      <DomainType value="EvaiItem"/>
+      <!DomainType value="1011"/>
+      <NameType value="1"/>
+      <NameEncodingType value="0"/>
+      <Name value="@ITEM"/>
+      <Qos value="10"/>
+      <ServiceID value="100"/>
+      <Opaque value="00"/>
+    </MsgKey>
+    <ElementList>
+      <Mask value="0" />
+      <ElementEntry>
+        <Name value="Name" />
+        <DataType value="Buffer" />
+        <Data encode="UTF8" value="AAUSD.xbo" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="DomainType" />
+        <DataType value="Integer" />
+        <Data value="6" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="ServiceID" />
+        <DataType value="Integer" />
+        <Data value="257" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="Qos" />
+        <DataType value="Integer" />
+        <Data value="10" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="Opaque" />
+        <DataType value="Buffer" />
+        <Data encode="UTF8" value="" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="Command" />
+        <DataType value="Buffer" />
+        <Data encode="UTF8" value="RE-REQUEST" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="ReturnCode" />
+        <DataType value="Integer" />
+        <Data value="1" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="ReturnText" />
+        <DataType value="Buffer" />
+        <Data encode="UTF8" value="" />
+      </ElementEntry>
+    </ElementList>
+  </MsgBase>
+  <Mask value="19048" /> 
+  <ResponseTypeNum value="1" /> 
+  <ResponseAction value="0" /> 
+  <ItemState>
+  <Mask value="0" /> 
+  <StreamState value="0" /> 
+  <DataState value="0" /> 
+  <StateCode value="0" /> 
+  <StateText value="" /> 
+  <ItemGroupID value="" /> 
+  <ItemGroupSeqNum value="0" /> 
+  </ItemState>
+  <PermissionInfo>
+  <Mask value="0" /> 
+  <PE value="0" /> 
+  <Data value="" /> 
+  </PermissionInfo>
+  <ItemSeqNum value="0" /> 
+  <ExchangeID value="" /> 
+  <ProviderID value="0" /> 
+  <ContextID value="0" /> 
+  <PartNum value="0" /> 
+  <ConstitNum value="1" /> 
+  <ConstitFilter value="2" /> 
+  <FieldListNum value="0" /> 
+  <ExtendedHeader value="" /> 
+</Message>
+

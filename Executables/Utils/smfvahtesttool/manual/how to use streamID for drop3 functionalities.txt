@@ -1,0 +1,5 @@
+streamID is newly added in drop3 based on NFR, and used for the oci features coming out during drop3 and  later than drop3
+
+if configured as 10001, it means it will act with the first partition, and so on..
+
+if configured as 10000, it means it will act with sharedvad

@@ -1,0 +1,70 @@
+*Brief Manual:
+
+1.	Firstly to get SMF deployed in the testbed, use ¡®net start smf¡¯ to start smf, get SmfRequester.exe deployed in designated testbed.
+2.	Then to execute SmfRespondent.exe, DEV/QA compatriots might use 'VAH' to take instead of SmfRespondent.exe while going on test.
+3.	Finally SmfRequester.exe. 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+*Execute Params:
+
+1.SmfRequester.exe [SMFHostLocation] [SMFConnectionPort] [XmlProtoFilePath] [XmlProtoFile] [XmlRespFile] [RespFileGenMode] [TimeOut]
+
+ (SmfRequester.exe 127.0.0.1 8603 ..//commandsfile LoadCommand.xml RespFromServer.xml append/replace 5)
+
+[XmlProtoFilePath]:  xmlfile path, i.e. ..//commandsfile
+
+[XmlProtoFile]: i.e. the xml files under ¡°..//commandsfile¡±, it will be sent out
+
+[XmlRespFile]: the file response from server peer
+
+[RespFileGenMode]: append or replace,  i.e. to append the response file or replace it
+
+[TimeOut]: timeout param, tool will at most wait $timeout seconds for vah's response.So during the waiting phase, the journalfile/vadreport files might be in place in advance. 
+ 
+
+2.SmfRespondent.exe [SMFHostLocation] [SMFConnectionPort] [LogFile] 
+
+(SmfRespondent.exe 127.0.0.1 8603 logfiletemp)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+*Log files usage
+You might find the log in access_log and error_log seperately:
+
+access_log usage: for example,
+
+access_log_110826_110034:  (generated on 11/08/26 11:00:34)
+=========================================
+            ACCESS_LOG BEGIN
+=========================================
+Request was sent.Current DateTime = 08/26/11 11:00:37
+Response from Server was received.Current DateTime = 08/26/11 11:00:37
+
+
+error_log usage: for example,
+
+error_log__110826_113209:  (kinds of error will be recorded, e.x. the log below means the xmlfile user defined doesn¡¯t exist)
+=========================================
+            ERROR_LOG BEGIN
+=========================================
+Failed to load file! 
+Application will terminate NOW!
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+*The structure of tool package:
+
+./requester:
+SmfRequester.exe  TinyXml.dll
+
+./respondent:
+SmfRespondent.exe  TinyXml.dll
+
+./commandsfile:
+ActivateCommand.xml           LoadCommand.xml       UnloadCommand.xml
+DeactivateCommand.xml         ResponseCommand.xml
+ExportJournalfileCommand.xml  RicMangleCommand.xml.......

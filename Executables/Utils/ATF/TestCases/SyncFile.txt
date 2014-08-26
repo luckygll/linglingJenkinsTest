@@ -1,0 +1,2 @@
+cd /cygdrive/D/TestAutomation/
+put "D:\ToolsProject\ATF\ATF\bin\Release\TestCases\Test.xls"

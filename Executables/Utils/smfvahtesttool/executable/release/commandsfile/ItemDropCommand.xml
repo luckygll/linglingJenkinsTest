@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<Message>
+	<MsgBase>
+		<SetID value="30"/>
+		<StreamID value="10001"/>
+		<MsgClass value="ItemStatus"/>
+		<ContainerType value="NoData"/>
+		<MsgKey>
+			<Mask value="0"/>
+			<DomainType value="MarketPrice"/>
+			<NameType value="1"/>
+			<NameEncodingType value="0"/>
+			<Name value="MANGLE.from0"/>
+			<Qos value="10"/>
+			<ServiceID value="0"/>
+			<Opaque value="00"/>
+		</MsgKey>
+	</MsgBase>
+
+	<Mask value="296"/>
+	<ItemState>
+		<Mask value="1"/>
+		<StreamState value="4"/>
+		<DataState value="1"/>
+		<StateCode value="0"/>
+		<StateText value="State_Normal_C"/>
+		<ItemGroupID value="8002005555"/>
+		<ItemGroupSeqNum value="0"/>
+	</ItemState>
+	<ItemSeqNum value="12"/>
+</Message>

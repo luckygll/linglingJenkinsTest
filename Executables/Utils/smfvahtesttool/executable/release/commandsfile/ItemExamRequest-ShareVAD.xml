@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Message>
+  <MsgBase>
+    <SetID value="30" />
+    <StreamID value="10000" />
+    <MsgClass value="Request" />
+    <ContainerType value="NoData" />
+    <MsgKey>
+      <Mask value="0" />
+      <DomainType value="MarketPrice" />
+      <NameType value="1" />
+      <NameEncodingType value="0" />
+      <Name value="OUTPUT2.BJ" />
+      <Qos value="10" />
+      <ServiceID value="0" />
+      <Opaque value="" />
+    </MsgKey>
+  </MsgBase>
+  <Mask value="128" />
+  <PriorityClass value="0" />
+  <PriorityCount value="0" />
+  <RecoveryItemSeqNum value="0" />
+  <ConstitFilter value="7" />
+</Message>

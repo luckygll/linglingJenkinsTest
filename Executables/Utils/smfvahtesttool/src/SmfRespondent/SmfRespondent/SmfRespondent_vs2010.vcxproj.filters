@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Handler.cpp">
+      <UniqueIdentifier>{d8694663-d712-4d4d-bb8a-218246e408b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Handler.h">
+      <UniqueIdentifier>{583ba708-acdb-4f7a-90a8-21dc12f68dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ErrorReason.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestReceiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestTimeHandler.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RequsetHandlers.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestLoadHandler.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestUnloadHandler.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestActivateHandler.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestDeactivateHandler.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestExportJournalfileHandler.cpp">
+      <Filter>Source Files\Handler.cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ErrorReason.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceiverServiceStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestReceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandlers.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestTimeHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestLoadHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestUnloadHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestActivateHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestDeactivateHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestExportJournalfileHandler.h">
+      <Filter>Header Files\Handler.h</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document>
+  <Events>	
+	<Event id="1" severity="Information" enableevent="1" url="none" 
+			text="Thread ID set to %1"
+			description="Describes the thread ID number"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="2" severity="Information" enableevent="1" url="none" 
+			text="Unknown object received"
+			description="An unknown object has been received"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="3" severity="Information" enableevent="1" url="none" 
+			text="Object has been dropped"
+			description="An item has been delibrately dropped"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="4" severity="Information" enableevent="1" url="none" 
+			text="Output channel (%1) does not exist"
+			description="A designated output channel has not been created"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="5" severity="Information" enableevent="1" url="none" 
+			text="Unable to write %1 to file %2"
+			description="The write was unsuccessful"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="6" severity="Information" enableevent="1" url="none" 
+			text="Created/Connected to pipe %1 with	file handle %2"
+			description="The pipe was successfully accessed"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="7" severity="Information" enableevent="1" url="none" 
+			text="Factory Manager not configured to handle object of type %1"
+			description="The object was not created"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="8" severity="Information" enableevent="1" url="none" 
+			text="A stream was corrupted due to: %1"
+			description="The object was not created"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="9" severity="Information" enableevent="1" url="none" 
+			text="An error for the pipe %1 was returned from the system.  The error code was %2"
+			description="The pipe action was unsuccessful"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+		
+	<Event id="11" severity="thresholdcritical" enableevent="1" url="none" 
+			text="Network Connection %1 is disconnected."
+			description="The named network connection has reported that the carrier sense status has changed to disconnected"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="12" severity="Information" enableevent="1" url="none" 
+			text="Network Connection %1 status is unknown - Reason %2."
+			description="The named network connection has reported that the carrier sense status is unknown"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+
+	<Event id="13" severity="Information" enableevent="1" url="none" 
+			text="Unable to write frame to %1"
+			description="The write was unsuccessful"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="14" severity="Information" enableevent="1" url="none" 
+			text="Unable to initiate read calls to %1"
+			description="The write was unsuccessful"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="15" severity="Information" enableevent="1" url="none" 
+			text="Data Smoother Send Fail - Queue Full"
+			description="Data Smoother Send Fail - Queue Full"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="16" severity="Information" enableevent="1" url="none" 
+			text="Data Smoother Send Fail - Item exceeds maximum credit size "
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="17" severity="Information" enableevent="1" url="none" 
+			text="Data Smoother GetItem Fail - insufficient credit"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="18" severity="Information" enableevent="1" url="none" 
+			text="Data Smoother TimerTick Fail - Unknown Credit Type"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="19" severity="Information" enableevent="1" url="none" 
+			text="Data Smoother Stats Fail - Invalid Stats Structure"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="20" severity="Information" enableevent="1" url="none" 
+			text="Data Smoother Send Fail - Unknown Credit Type"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>	
+	<Event id="21" severity="Information" enableevent="1" url="none" 
+			text="Next Gen API Fail - Invalid Pointer"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="22" severity="Information" enableevent="1" url="none" 
+			text="Next Gen API Fail - Unknown Handle"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="23" severity="Information" enableevent="1" url="none" 
+			text="Next Gen API Fail - Not Configured"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="24" severity="warning" enableevent="1" url="none" 
+			text="Next Gen API Fail - Invalid configuration supplied"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="25" severity="warning" enableevent="1" url="none" 
+			text="Next Gen API Fail - Instance already configured"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="26" severity="Information" enableevent="1" url="none" 
+			text="An invalid frame has been passed to the Decoder API : %1"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="27" severity="Information" enableevent="1" url="none" 
+			text="There is an ID to Destination mismatch in the Decoder API"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="28" severity="Information" enableevent="1" url="none" 
+			text="No data to flush from the Decoder API"
+			description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="29" severity="Information" enableevent="1" url="none" 
+			text="Unable to save file %1"
+			description="The system was unable to save to disc - does the directory exist?"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="30" severity="Information" enableevent="1" url="none" 
+			text="General API Error : %1"
+			description="The API has caused an error"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="31" severity="Information" enableevent="1" url="none" 
+			text="Next Housekeeping time is at %1"
+			description="housekeeping time will occur at the given time"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+
+	<Event id="32" severity="Information" enableevent="1" url="none" 
+			text="Unable to create Memory block of size %1"
+			description="The memory pool was unable to service this request"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="33" severity="warning" enableevent="1" url="none" 
+			text="A thread named %1 was not found" description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="34" severity="warning" enableevent="1" url="none" 
+			text="Statistics block (%1) was unable to be saved - size of memory (%2) is too small" description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="36" severity="warning" enableevent="1" url="none" 
+			text="New instance of the Decoder API for IP %1.%2.%3.%4 Port %5 Line Id %6" description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="37" severity="warning" enableevent="1" url="none" 
+			text="The versions passed into trDHDecodeInitialize do not match" description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="38" severity="warning" enableevent="1" url="none" 
+			text="Too many instances of the Decoder API in existance" description=""
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<!-- Gap here -->
+	<Event id="39" severity="Information" enableevent="1" url="none" 
+			text="Thread %1 was unable to be found - ASync call failed"
+			description="An ASynchronous call was tried on a thread which the ASyncMethodCall component did not have knowledge of"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="40" severity="Information" enableevent="1" url="none" 
+			text="An invalid thread of Handle %1 was tried to be called - ASync call failed"
+			description="An ASynchronous call was tried with an invald thread handle"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="41" severity="Information" enableevent="1" url="none" 
+			text="Call to QueueUserAPC has failed"
+			description="The windows call to QueueUserAPC has failed - there is no associated error message"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="42" severity="Information" enableevent="1" url="none" 
+			text="TRWF API was unable to encode message. Return Code: %1 Api Call: %2 Line %3 Filename %4"
+			description="The TRWF API was unable to encode this messages header"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="43" severity="Information" enableevent="1" url="none" 
+			text="Corrupt TRWF Message received from %1: Message Discarded"
+			description="The TRWF API was unable to decode this messages header"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="44" severity="error" enableevent="1" url="none" 
+			text="Channel has discarded item"
+			description="A channel ran out of room in its queue and discarded the item"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="45" severity="thresholdcritical" enableevent="1" url="none" 
+			text="Channel supplied by thread %1 is discarding items"
+			description="A channel ran out of room in its queue and is discarding items"
+			operatoraction="None">
+		<Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="46"  severity="thresholdwarning" enableevent="1" url="none"
+		text="Overload Entry (Channel supplied by thread %1)" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	<Event id="47"  severity="thresholdwarning" enableevent="1" url="none"
+		text="Low Watermark exceeded (Channel supplied by thread %1)" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+    <Event id="48"  severity="thresholdcritical" enableevent="1" url="none"
+		text="Overflow Entry (Channel supplied by thread %1)" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="49"  severity="thresholderror" enableevent="1" url="none"
+		text="High Watermark exceeded (Channel supplied by thread %1)" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+   <Event id="70"  severity="error" enableevent="1" url="none"
+			text="Index %1 wasn't configured and so wasn't supported" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+   <Event id="71"  severity="error" enableevent="1" url="none"
+			text="Invalid pointer was passed to trDHEncodeGetMsgBuffer" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="72"  severity="error" enableevent="1" url="none"
+     text="Unknown handle was passed to trDHEncodeGetMsgBuffer" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="73"  severity="error" enableevent="1" url="none"
+     text="Handle that wasn't configured was passed to trDHEncodeGetMsgBuffer" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+   <Event id="74"  severity="error" enableevent="1" url="none"
+     text="Too big message was passed to trDHEncodeGetMsgBuffer" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+   <Event id="75"  severity="error" enableevent="1" url="none"
+     text="Buffer Outstanding was found in trDHEncodeGetMsgBuffer" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="76"  severity="error" enableevent="1" url="none"
+     text="Wrong instance was used in trDHEncodeCompleteMsg" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="77"  severity="error" enableevent="1" url="none"
+    text="Unknown handle was passed to trDHEncodeCompleteMsg" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="78"  severity="error" enableevent="1" url="none"
+    text="Invalid pointer was passed to trDHEncodeCompleteMsg" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="79"  severity="error" enableevent="1" url="none"
+    text="Handle that wasn't configured was passed to trDHEncodeCompleteMsg" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="80"  severity="error" enableevent="1" url="none"
+    text="The message passed to trDHEncodeCompleteMsg was too big" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="81"  severity="error" enableevent="1" url="none"
+    text="Buffer was overrun in trDHEncodeCompleteMsg" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+ 
+   <Event id="82"  severity="error" enableevent="1" url="none"
+    text="Buffer outstanding was found in trDHEncodeCompleteMsg" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="83"  severity="error" enableevent="1" url="none"
+    text="Attempt to send too big a frame" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+   <Event id="84"  severity="error" enableevent="1" url="none"
+    text="Unknown handle was passed to trDHEncodeFlushFrame" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="85"  severity="error" enableevent="1" url="none"
+        text="Invalid pointer was passed to trDHEncodeFlushFrame" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+   
+   <Event id="86"  severity="error" enableevent="1" url="none"
+        text="Unrecognized error code was found" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+      
+   <Event id="87"  severity="error" enableevent="1" url="none"
+        text="The Group %1 failed to reset the frame sequence number" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+		      
+   <Event id="88"  severity="information" enableevent="1" url="none"
+        text="The Group %1 successfully reset the frame sequence number from %2 to zero" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+   <Event id="89"  severity="warning" enableevent="1" url="none"
+        text="An invalid TRWF2 message was found" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+	
+    <Event id="90"  severity="thresholdwarning" enableevent="1" url="none"
+    text="Overload Entry" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="91"  severity="thresholdwarning" enableevent="1" url="none"
+		text="Low watermark has been exceeded" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="92"  severity="thresholdcritical" enableevent="1" url="none"
+    text="Overflow Entry" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="93"  severity="thresholdcritical" enableevent="1" url="none"
+		text="High watermark has been exceeded" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	 <Event id="94"  severity="information" enableevent="1" url="none"
+		text="statistic %1 was incorrectly used with the wrong type %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	<Event id="96"  severity="information" enableevent="1" url="none"
+		text="Dynamic Configuration %1 changed: Value %2 was changed from %3 to %4" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="97"  severity="information" enableevent="1" url="none"
+		text="Compression Buffer Failure: Believed Size %1 Original Size %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="98"  severity="warning" enableevent="1" url="none"
+		text="Unable to save statistic '%1' in group '%2'" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="99"  severity="warning" enableevent="1" url="none"
+		text="Unable to age out file '%1' because '%2'" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="100"  severity="warning" enableevent="1" url="none"
+    text="SMF: Connection to SMF server has been lost" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="101"  severity="warning" enableevent="1" url="none"
+    text="SMF: Connection to SMF server has been restored" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="102"  severity="warning" enableevent="1" url="none"
+    text="SMF: Request Lost - too many requests in flight" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="103"  severity="warning" enableevent="1" url="none"
+    text="SMF: General failure reported for %1 because %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	<Event id="104"  severity="warning" enableevent="1" url="none"
+    text="SMF: Service %1 missed request message because: %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	<Event id="105"  severity="warning" enableevent="1" url="none"
+    text="SMF: %1 Service in unknown state: %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	<Event id="106"  severity="warning" enableevent="1" url="none"
+    text="SMF: Health Update Failed Reason : %1 Identifier %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="107"  severity="warning" enableevent="1" url="none"
+		text="SMF Exception: %1" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="110"  severity="error" enableevent="1" url="none"
+        text="Datagram Sender Failed to start" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="111"  severity="error" enableevent="1" url="none"
+        text="Datagram Receiver Failed to start" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="112"  severity="error" enableevent="1" url="none"
+      text="Datagram Sender Failed to start" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="113"  severity="error" enableevent="1" url="none"
+      text="Datagram Receiver Failed to start" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="114"  severity="error" enableevent="1" url="none"
+      text="Datagram Sender Configuration error" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="115"  severity="error" enableevent="1" url="none"
+      text="Datagram Receiver Configuration error" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="116"  severity="information" enableevent="1" url="none"
+      text="Network card %1 has been set to Manual Control: %2. " operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+    <Event id="120"  severity="thresholdcritical" enableevent="1" url="none"
+        text="Datagram Sender Failed to send frames" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="121"  severity="information" enableevent="1" url="none"
+        text="Datagram Receiver dropped multicast %1" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="122"  severity="error" enableevent="1" url="none"
+        text="Datagram Receiver failed to drop multicast %1" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="123"  severity="information" enableevent="1" url="none"
+        text="Datagram Receiver added multicast %1" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="124"  severity="error" enableevent="1" url="none"
+        text="Datagram Receiver failed to add multicast %1" operatoraction="">
+        <Destination target="log" enableevent ="1"/>
+		<Destination target="smf" enableevent="1"/>
+    </Event>
+
+      <Event id="125"  severity="information" enableevent="1" url="none"
+    text="Datagram Receiver dropped distribution %1" operatoraction="">
+          <Destination target="log" enableevent ="1"/>
+		  <Destination target="smf" enableevent="1"/>
+      </Event>
+
+      <Event id="126"  severity="error" enableevent="1" url="none"
+          text="Datagram Receiver failed to drop distribution %1" operatoraction="">
+          <Destination target="log" enableevent ="1"/>
+		  <Destination target="smf" enableevent="1"/>
+      </Event>
+
+      <Event id="127"  severity="information" enableevent="1" url="none"
+          text="Datagram Receiver added distribution %1" operatoraction="">
+          <Destination target="log" enableevent ="1"/>
+		  <Destination target="smf" enableevent="1"/>
+      </Event>
+
+      <Event id="128"  severity="error" enableevent="1" url="none"
+          text="Datagram Receiver failed to add distribution %1" operatoraction="">
+          <Destination target="log" enableevent ="1"/>
+          <Destination target="smf" enableevent="1"/>
+      </Event>
+      
+      <Event id="129"  severity="error" enableevent="1" url="none"
+          text="Datagram Sender failed resolve address using ARP %1" operatoraction="">
+          <Destination target="log" enableevent ="1"/>
+          <Destination target="smf" enableevent="1"/>
+      </Event>
+
+      <Event id="140"  severity="warning" enableevent="1" url="none"
+      text="trDHEncodeReleaseBuffer has failed; no buffer outstanding" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="141"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeReleaseBuffer has failed; wrong instance being called" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="142"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeCompleteMsg has failed; wrong instance being called" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	<Event id="143"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeCompleteMsg has failed; Message was too big" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="144"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeCompleteMsg has failed; Buffer Overrun" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	<Event id="145"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeGetBuffer has failed; Message was too big" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	<Event id="146"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeGetBuffer has failed; A buffer was outstanding" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="147"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeGetBuffer has failed; Flush must be called first" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>	
+
+	<Event id="148"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeCompleteMsg has failed; No buffer was outstanding" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>	
+
+	<Event id="149"  severity="warning" enableevent="1" url="none"
+    text="trDHEncodeCompleteMsg has failed; Flush must be called first" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="150"  severity="error" enableevent="1" url="none"
+    text="Unable to save full stats file" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	<Event id="151"  severity="error" enableevent="1" url="none"
+    text="can not save time stamps for full stats file - memory block of at least %1 bytes required" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="160"  severity="information" enableevent="1" url="none"
+    text="The SoftwareArbiter has changed state from %1 to %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>	
+
+	<Event id="161"  severity="thresholdharmless" enableevent="1" url="none"
+    text="The SoftwareArbiter is now running in Standalone mode" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>	
+	
+	<Event id="200"  severity="thresholdcritical" enableevent="1" url="none"
+		text="MEMORY USAGE IS NOW CRITICAL; IMMINENT POSSIBILITY OF CRASH" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="201" severity="error" enableevent="1" url="none"
+        text="Corrupt chunk. Address %1. Size %2 Bytes. Type Id %3" operatoraction="">
+        <Destination target="log" enableevent="1"/>
+        <Destination target="smf" enableevent="1"/>
+    </Event>
+
+    <Event id="210"  severity="information" enableevent="1" url="none"
+		text="Event %1 has been modified: Severity=%2 Enabled=%3 Output To Log=%4 Output To SMF=%5 EventRepeatTime=%6" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="211"  severity="information" enableevent="1" url="none"
+		text="The Event Overrride File has been reset" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="250"  severity="thresholdcritical" enableevent="1" url="none"
+		text="SID2.dat failed to load at %1.  Error Text %2" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>	
+	
+	<Event id="300" severity="warning" enableevent="1" url="none" 
+			text="Item %1 dynamically changed from %2 to %3"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="301" severity="warning" enableevent="1" url="none" 
+			text="Item %1 could not be dynamically changed to %2.  Must be from %3 to %4"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="400" severity="warning" enableevent="1" url="none" 
+			text="Statistics group '%1' has failed to publish"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="401" severity="warning" enableevent="1" url="none" 
+			text="Failed to open SMF Partition: '%1'"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+				
+	<Event id="402" severity="warning" enableevent="1" url="none" 
+			text="ValueAddedStat Define '%1' has not been found"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="403" severity="warning" enableevent="1" url="none" 
+			text="Duplicate statistic '%2' has been added in group '%1'"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="0"/>
+	</Event>
+	<Event id="404" severity="warning" enableevent="1" url="none" 
+			text="Invalid Timestamp statistic '%1' has been added as '%2' - this stat must be an 'int64' type"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="0"/>
+	</Event>
+	<Event id="430" severity="warning" enableevent="1" url="none" 
+			text="Failed to create heap: %1"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="431" severity="warning" enableevent="1" url="none" 
+			text="Failed to destroy heap %1 allocs outstanding %2 bytes"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="432" severity="warning" enableevent="1" url="none" 
+			text="Failed to destroy heap: %1"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="433" severity="warning" enableevent="1" url="none" 
+			text="Heap destroyed ok. %1 allocs outstanding %2 bytes"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="434" severity="warning" enableevent="1" url="none" 
+			text="Heap failed to create chunk of %1 bytes because %2"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="435" severity="warning" enableevent="1" url="none" 
+			text="Heap failed to create chunk of %1 bytes because heap not created"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="436" severity="warning" enableevent="1" url="none" 
+			text="Heap failed to delete chunk of %1 bytes because %2"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="437" severity="warning" enableevent="1" url="none" 
+			text="Failed to create heap because component not activated"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>	
+	
+	<Event id="450" severity="critical" enableevent="1" url="none" 
+			text="Failed to load Label Table file: %1"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="451" severity="information" enableevent="1" url="none" 
+			text="New Label table %1 has been loaded, but is not yet being used"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	
+	<Event id="452" severity="information" enableevent="1" url="none" 
+			text="New Label table %1 is now being used"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+
+	<Event id="460" severity="information" enableevent="1" url="none" 
+			text="FID Dictionary at '%1' not found"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="461" severity="information" enableevent="1" url="none" 
+			text="FID Dictionary '%1' has been loaded"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+	<Event id="462" severity="information" enableevent="1" url="none" 
+			text="FID Dictionary '%1' has failed to load because: %2"
+			description=""
+			operatoraction="">
+		<Destination target="log" enableevent="1"/>
+		<Destination target="smf" enableevent="1"/>
+	</Event>
+  <Event id="500" severity="Warning" enableevent="1" url="none"
+      text="Unexpected Unaligned frame received on stream %1 (sequence %2)"
+      description="Check the upstream devices to make sure they are functioning correctly.\nCheck the hardware."
+      operatoraction="">
+    <Destination target="log" enableevent="1"/>
+    <Destination target="smf" enableevent="1"/>
+  </Event>
+    <Event id="501" severity="Information" enableevent="1" url="none"
+			text="Corrupt Market Stream message received on stream %1 (sequence %2): Message Discarded"
+			description="The MS API was unable to decode this messages header"
+			operatoraction="None">
+      <Destination target="log" enableevent ="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>   
+    <Event id="502" severity="Warning" enableevent="1" url="none"
+        text="Unaligned frame error on stream %1 (sequence %2)"
+        description="An Unaligned frame was received that did not conform to the RDC protocal for processing messages that cant fit in single frame"
+        operatoraction="Check the upstream devices to make sure they are functioning correctly.\nCheck the hardware.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+    <Event id="503" severity="Warning" enableevent="1" url="none"
+            text="Head End MSE message received on stream %1 (sequence %2)"
+            description="Check the upstream devices to make sure they are functioning correctly.\nCheck the hardware."
+            operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+    <Event id="504" severity="Warning" enableevent="1" url="none"
+            text="Market Stream Message Received larger than the maximum allowed MS size, on stream %1 (sequence %2)"
+            description="Check the upstream devices to make sure they are functioning correctly.\nCheck the hardware."
+            operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+    <Event id="505" severity="Warning" enableevent="1" url="none"
+            text="Market Stream Message Received smaller than the minimum allowed MS size, on stream %1 (sequence %2)"
+            description="Check the upstream devices to make sure they are functioning correctly.\nCheck the hardware."
+            operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+    <Event id="506" severity="Warning" enableevent="1" url="none"
+			text="Sequence error on read, last frame: %1, current frame: %2, stream: %3"
+			description="A sequence error was generated on a stream"
+			operatoraction="Check the upstream devices to make sure they are functioning correctly.\nCheck the hardware.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	<Event id="600"  severity="thresholderror" enableevent="1" url="none"
+		text="Disk %1 Space High Watermark exceeded" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+    </Event>	
+	<Event id="601"  severity="thresholdwarning" enableevent="1" url="none"
+		text="Disk %1 Space Low Watermark exceeded" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+    </Event>
+	<Event id="650"  severity="thresholdcritical" enableevent="1" url="none"
+		text="Diagnostic Feature Enabled: %1" operatoraction="">
+      <Destination target="log" enableevent ="1"/>
+	  <Destination target="smf" enableevent="1"/>
+    </Event>	
+	<Event id="700" severity="warning" enableevent="1" url="none"
+			text="[Quantum] Connection Stopped"
+			description="The connection was dropped from the SCW"
+			operatoraction="Check the SCW to determine why the connection was stopped.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="701" severity="warning" enableevent="1" url="none"
+			text="[Quantum] Connection Established"
+			description="The connection was established with the SCW"
+			operatoraction="No action.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+
+	<Event id="702" severity="warning" enableevent="1" url="none"
+			text="[Quantum] Sent QOS registration, items: %1"
+			description="QOS data has been sent to SCW"
+			operatoraction="No action.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="703" severity="warning" enableevent="1" url="none"
+			text="[Entity: STATE] Connected"
+			description="The connected callback has been received from the SCW"
+			operatoraction="No action.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="704" severity="thresholdcritical" enableevent="1" url="none"
+			text="[Entity: STATE] Instructed to terminate by SCW"
+			description="The application has been instructed to terminate by the SCW"
+			operatoraction="Investigate why the SCW has instructed the app to terminate.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="705" severity="warning" enableevent="1" url="none"
+			text="[Entity: STATE] Instructed to send QOS refresh by SCW"
+			description="The app has been told to send a qos refresh to the SCW. This is typically because a heartbeat from the app was late, or lost"
+			operatoraction="Investigate why the SCW has instructed the app to terminate.">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="706" severity="warning" enableevent="1" url="none"
+			text="[Entity: DISCONNECTED] Disconnected callback received"
+			description="The app has been told that is it disconnected from the SCW.  It will move the Standby"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="707" severity="warning" enableevent="1" url="none"
+			text="[Entity: STATE_CHANGE] current_state: %1, new_state: %2"
+			description="The app has been given a new target state to change to"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="708" severity="warning" enableevent="1" url="none"
+			text="[Entity: STATE] Changing to %1"
+			description="The app is changing state"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="709" severity="warning" enableevent="1" url="none"
+			text="[Entity: Manual Standby Request] current_state: %1, target_state: %2"
+			description="The app is changing to standby from a manual request - normally the console"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="710" severity="warning" enableevent="1" url="none"
+			text="[Entity: Manual STATE_CHANGE] current_state: %1, target_state: %2"
+			description="The app is changing to a new state from a manual request - normally the console"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="711" severity="warning" enableevent="1" url="none"
+			text="[SCWClient:PARTNERS] Received partner query reply"
+			description="The app is processing a partner_query_request"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+	<Event id="712" severity="error" enableevent="1" url="none"
+			text="[SCWClient:ERROR] %1"
+			description="The app has received an error from the SCW"
+			operatoraction="">
+      <Destination target="log" enableevent="1"/>
+      <Destination target="smf" enableevent="1"/>
+    </Event>
+	
+  </Events>
+</document>

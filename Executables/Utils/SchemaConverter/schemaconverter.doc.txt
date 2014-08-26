@@ -1,0 +1,59 @@
+# schema converter
+
+
+## introduction
+
+schema converter - convert txt template file to xml schema file
+
+version: v0.3, 2012-01-18
+
+author: bryan yang
+
+
+## usage
+
+usage: schemaconverter -t:templatefile [-s:schemafile]
+
+options:
+
+	-t:templatefile     input template file to convert
+	-s:schemafile       [optional] converted output schema file
+	-h                  display help message
+	-v                  display version
+
+if `-s` is ommitted, the template file name will be used in output file name with suffix `.xml`.
+
+
+## template file
+
+the template file should be a txt file, with blocks which started by an entry `TMPLNO` and followed by field id/name pairs.
+
+there can be comments starting with `!`.
+
+sample:
+
+	!TEMPLATE NAME: ALL_OPTIONS_C
+	TMPLNO:          1
+	1		 !PROD_PERM
+	2		 !RDNDISPLAY
+	3		 !DSPLY_NAME
+	4		 !RDN_EXCHID
+	5		 !TIMACT
+
+	TMPLNO:          2
+	4		 !RDN_EXCHID
+	5		 !TIMACT
+
+
+## notes
+
+the packaged executable `SchemaConverter.exe` is 64-bit.
+
+
+## changelog
+
+2012-01-18, v0.3, now support _nonstandard_ template file which does not have field name comments.
+
+2011-12-14, v0.2, now can parse somehow _non-standard_ template file and can handle negative fid.
+
+2011-11-14, v0.1, first version, can parse _standard_ template file.

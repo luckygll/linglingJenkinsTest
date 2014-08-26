@@ -1,0 +1,2 @@
+cd /cygdrive/D/TestAutomation/
+mput -r "D:\ToolsProject\ATF\ATF\bin\Release\TestCases"

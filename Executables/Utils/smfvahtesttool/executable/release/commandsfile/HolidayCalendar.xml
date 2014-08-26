@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Message>
+  <MsgBase>
+    <SetID value="30" />
+    <StreamID value="12001" />
+    <MsgClass value="Generic" />
+    <ContainerType value="ElementList" />
+    <MsgKey>
+      <Mask value="0" />
+      <DomainType value="EvaiGeneric" />
+      <NameType value="1" />
+      <NameEncodingType value="0" />
+      <Name value="partitioncore*" />
+      <Qos value="10" />
+      <ServiceID value="0" />
+      <Opaque value="00" />
+    </MsgKey>
+    <ElementList>
+      <Mask value="0" />
+      <ElementEntry>
+        <Name value="Command" />
+        <DataType value="UInt" />
+        <Data value="10" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="Operator" />
+        <DataType value="Buffer" />
+        <Data encode="UTF8" value="Admin  (admin)" />
+      </ElementEntry>
+      <ElementEntry>
+        <Name value="FileName" />
+        <DataType value="Buffer" />
+        <Data encode="UTF8" value="D:\ThomsonReuters\VAH\Config\Holiday.xml" />
+      </ElementEntry>
+    </ElementList>
+  </MsgBase>
+  <Mask value="260" />
+</Message>

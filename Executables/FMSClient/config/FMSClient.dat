@@ -1,0 +1,114 @@
+
+#####################################################################
+#
+#                    FMSClient Configuration
+#
+#####################################################################
+
+#--------------------------------------------------------------------
+# General
+#--------------------------------------------------------------------
+
+# hostname identification
+fmsclient.server.name				EVAIHOST_MACRO
+
+fmsclient.log_rollover_time			00:00:00	
+
+# cif tuning
+fmsclient.cif_tcp_receive_buffer_size		64000
+fmsclient.cif_tcp_send_buffer_size		12800
+
+# msg processing tuning (ms)
+fmsclient.message_processing_timeout		300000
+# msg processing tuning
+fmsclient.reads_per_notification		0
+
+# snapshot timout (MDE) (sec)
+fmsclient.snap_timeout				60000
+
+# tell FMS we suppoort compression 
+fmsclient.enable_compression			true
+
+#--------------------------------------------------------------------
+# Communication
+#--------------------------------------------------------------------
+
+# FMS exposed web service IP and PORT for PR/DR
+fmsclient.ws.pr_ip				FMS-WS-PRIMARY-IP-MACRO
+fmsclient.ws.dr_ip				FMS-WS-SECONDARY-IP-MACRO	
+fmsclient.ws.port				8004
+
+# FMSClient fms listen address IP and PORT
+fmsclient.server.ip				MGMT-IME-LAN-MACRO
+fmsclient.server.port				25000
+
+# FMSClient headend listen address IP and PORT
+fmsclient.fmsapi_server.ip			MGMT-IME-LAN-MACRO
+fmsclient.fmsapi_server.port			14003
+fmsclient.fmsapi_server.listen_retry_max	1000
+fmsclient.fmsapi_server.listen_retry_sleep	1000
+
+# write enabled IP addresses (Disabled since release 1.8.0.0)
+# fmsclient.allow_write_op_hosts      		()
+
+#--------------------------------------------------------------------
+# Registration
+#--------------------------------------------------------------------
+
+# headend registration timeout 
+# absolute timeout (ms)
+fmsclient.client_registration_timeout 		10000
+# checking interval (ms)
+fmsclient.client_registration_timer_interval 	1000
+
+#--------------------------------------------------------------------
+# Session
+#--------------------------------------------------------------------
+
+# session inter-message timeout (ms)
+fmsclient.session_inactivity_timeout		120000
+# session creation timeout (ms)
+fmsclient.session_start_timeout			5000
+
+#--------------------------------------------------------------------
+# Job Control
+#--------------------------------------------------------------------
+
+# Enforced jog message throttle rate 
+fmsclient.job_throttle_msg_sec.live		0
+fmsclient.job_throttle_msg_sec.stby		0
+
+#--------------------------------------------------------------------
+# MasterFieldList, synchronised from FMS via ftp
+#--------------------------------------------------------------------
+
+# remote path URI formed with fmsclient.ws.pr_ip
+fmsclient.trwf_field_list_source		TRWF2.DAT
+fmsclient.private_field_list_source		PRIVATE.DAT
+# locally configured field list name
+fmsclient.trwf_field_list			TRWF2.DAT
+fmsclient.private_field_list			PRIVATE.DAT
+# ftp site polling frequency 
+# (0 disabled, 1..n secs interval)
+fmsclient.field_list_check_interval 		0
+# application of changed file frequency 
+# (0 disabled, 1..n secs interval)
+fmsclient.field_list_reload_interval 		0
+
+#--------------------------------------------------------------------
+# FMS ftp configuration, message specific remote paths
+#--------------------------------------------------------------------
+fmsclient.surplus_records_upload		SurplusRecords
+fmsclient.recon_results_records_upload		SurplusRecords
+
+#--------------------------------------------------------------------
+# FMSClient cached notification message configuration
+#--------------------------------------------------------------------
+# Clean up cache according to time period, message count or estimated memory usage, whichever limit reached first
+fmsclient.notification_cache_duration_in_seconds		300
+fmsclient.notification_cache_clean_interval_in_seconds		5
+fmsclient.notification_cache_message_limit_count		300000
+
+# Clean up outstanding FMSClient jobs according to the time out on the clean intervals
+fmsclient.outstanding_jobs_timeout_in_seconds				300
+fmsclient.outstanding_jobs_clean_interval_in_seconds		5

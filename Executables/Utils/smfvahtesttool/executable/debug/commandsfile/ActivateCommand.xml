@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Message>
+	<MsgBase>
+		<SetID value="30"/>
+		<StreamID value="4427"/>
+		<MsgClass value="Generic"/>
+		<ContainerType value="ElementList"/>
+		<MsgKey>
+			<Mask value="0"/>
+			<DomainType value="EVAI"/>
+			<NameType value="1"/>
+			<NameEncodingType value="0"/>
+			<Name value="partitioncore0"/>
+			<Qos value="10"/>
+			<ServiceID value="101"/>
+			<Opaque value="00"/>
+		</MsgKey>
+		<ElementList>
+			<Mask value="0" />
+			<ElementEntry>
+				<Name value="Command" />
+				<DataType value="UInt" />
+				<Data value="3"/>
+			</ElementEntry>
+			<ElementEntry>
+				<Name value="Operator" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="ZhaoYi" />
+			</ElementEntry>
+			<ElementEntry>
+				<Name value="VAAName" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="VDIIntepreter" />
+			</ElementEntry>
+		</ElementList>
+	</MsgBase>
+	<Mask value="636"/>
+	<PermissionInfo>
+		<Mask value="0"/>
+		<PE value="333"/>
+	</PermissionInfo>
+	<ItemSeqNum value="12"/>
+	<ExchangeID value="888000"/>
+	<PartNum value="0"/>
+	<ConstitNum value="5"/>
+</Message>

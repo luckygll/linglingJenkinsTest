@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<!-- FID_Init: EVAA ==> VAE -->
+<Message>
+	<MsgBase>
+		<SetID value="30" />
+		
+		<!-- StreamID is calculated and filled by Admin Server. Please refer to the section 4 -->
+		<StreamID value="10001" />
+		<MsgClass value="Response" />
+		<ContainerType value="ElementList" />
+		
+		<MsgKey>
+			<Mask value="0" />
+			<DomainType value="EvaiVad" />
+			<NameType value="1" />
+			<NameEncodingType value="0" />
+			<Name value="@VAD" />
+			<Qos value="10" />
+			<ServiceID value="100" />
+			<Opaque value="00" />
+		</MsgKey>
+			
+		<ElementList>
+			<Mask value="0" />
+			<ElementEntry>
+				<Name value="Command" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="SEARCH" />
+			</ElementEntry>
+			
+			<ElementEntry>
+				<Name value="ReturnCode" />
+				<DataType value="Integer" />
+				<!-- Expect VAE overwrite this field in reponse -->
+				<Data value="-1"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<Name value="ReturnText" />
+				<DataType value="Buffer" />
+				<!-- Expect VAE overwrite this field in reponse -->
+				<Data encode="UTF8" value="" />
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="Name" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="*" />
+			</ElementEntry>
+
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="DomainType" />
+				<DataType value="Integer" />
+				<Data value="6"/>
+			</ElementEntry>
+
+			<ElementEntry>
+				<!-- Optional -->
+				<!--all input Item:28; only EED input Item:4; only output Item:1; only Internal Item:2; All Items:31-->
+				<Name value="ServiceID" />
+				<DataType value="Integer" />
+				<Data value="0"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="Qos" />
+				<DataType value="Integer" />
+				<Data value="10"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="Opaque" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="00" />
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="PE" />
+				<DataType value="UInt" />
+				<Data value="0"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="LastUpdateTime" />
+				<DataType value="DateTime" />
+				<!-- below value is just a sample -->
+				<Data value="Temp" datevalue="2013-1-1" timeformat="0" timevalue="11111"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="State" />
+				<DataType value="Integer" />
+				<Data value="3"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="Storage Schema Id" />
+				<DataType value="Integer" />
+				<Data value="0"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="Transmission Schema Id" />
+				<DataType value="Integer" />
+				<Data value="127"/>
+			</ElementEntry>
+
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="Throttle Group Id" />
+				<DataType value="Integer" />
+				<Data value="0"/>
+			</ElementEntry>
+
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="MangleState" />
+				<DataType value="Integer" />
+				<Data value="0" />
+			</ElementEntry>
+
+			<ElementEntry>
+				<!-- Optional -->
+				<Name value="ManglePE" />
+				<DataType value="UInt" />
+				<Data value="0"/>
+			</ElementEntry>
+
+		</ElementList>
+	</MsgBase>
+	
+	<!-- Mask = TRWF_MSG_RPM_MSK_HAS_STREAM_ID(0x04000)	 |
+				TRWF_MSG_RPM_MSK_HAS_MSG_KEY(0x00008)     | 
+				TRWF_MSG_RPM_MSK_IND_MSG_SEM_CLEAR_CACHE(0x00040) |
+				TRWF_MSG_RPM_MSK_HAS_CONSTIT_NUM(0x00200) |
+				TRWF_MSG_RPM_MSK_HAS_CONSTIT_FILTER(0x00400) |
+				TRWF_MSG_RPM_MSK_IND_PARTS_COMPL(0x00020) |
+				TRWF_MSG_RPM_MSK_IND_ALL_CONSTITS_COMPL(0x00800) -->
+	<Mask value="19048" />
+	<ResponseTypeNum value="1" />
+	<ResponseAction value="0" />
+	<ItemState>
+		<Mask value="0" />
+		<StreamState value="0" />
+		<DataState value="0" />
+		<StateCode value="0" />
+		<StateText value="" />
+		<ItemGroupID value="" />
+		<ItemGroupSeqNum value="0" />
+	</ItemState>
+	<PermissionInfo>
+		<Mask value="0" />
+		<PE value="0" />
+		<Data value="" />
+	</PermissionInfo>
+	<ItemSeqNum value="0" />
+	<ExchangeID value="" />
+	<ProviderID value="0" />
+	<ContextID value="0" />
+	<PartNum value="0" />
+	<ConstitNum value="1" />
+	<ConstitFilter value="2" />
+	<FieldListNum value="0" />
+	<ExtendedHeader value="" />
+</Message>

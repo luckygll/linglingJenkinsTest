@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!-- FID_Init: EVAA ==> VAE -->
+<Message>
+	<MsgBase>
+		<SetID value="30" />
+		
+		<!-- StreamID is calculated and filled by Admin Server. Please refer to the section 4 -->
+		<StreamID value="10001" />
+		<MsgClass value="Response" />
+		<ContainerType value="ElementList" />
+		
+		<MsgKey>
+			<Mask value="0" />
+			<DomainType value="EvaiVad" />
+			<NameType value="1" />
+			<NameEncodingType value="0" />
+			<Name value="@VAD" />
+			<Qos value="10" />
+			<ServiceID value="100" />
+			<Opaque value="00" />
+		</MsgKey>
+			
+		<ElementList>
+			<Mask value="0" />
+			<ElementEntry>
+				<Name value="Command" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="BULK" />
+			</ElementEntry>
+			
+			<ElementEntry>
+				<Name value="ReturnCode" />
+				<DataType value="Integer" />
+				<!-- Expect VAE overwrite this field in reponse -->
+				<Data value="-1"/>
+			</ElementEntry>
+			
+			<ElementEntry>
+				<Name value="ReturnText" />
+				<DataType value="Buffer" />
+				<!-- Expect VAE overwrite this field in reponse -->
+				<Data encode="UTF8" value="" />
+			</ElementEntry>
+			
+			<ElementEntry>
+				<Name value="JobId" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="nihao" />
+			</ElementEntry>
+
+			<ElementEntry>
+				<Name value="File" />
+				<DataType value="Buffer" />
+				<Data encode="UTF8" value="jobfile1" />
+			</ElementEntry>
+			
+			<ElementEntry>
+				<Name value="Version" />
+				<DataType value="UInt" />
+				<Data value="1" />
+			</ElementEntry>
+
+		</ElementList>
+	</MsgBase>
+	
+	<!-- Mask = TRWF_MSG_RPM_MSK_HAS_STREAM_ID(0x04000)	 |
+				TRWF_MSG_RPM_MSK_HAS_MSG_KEY(0x00008)     | 
+				TRWF_MSG_RPM_MSK_IND_MSG_SEM_CLEAR_CACHE(0x00040) |
+				TRWF_MSG_RPM_MSK_HAS_CONSTIT_NUM(0x00200) |
+				TRWF_MSG_RPM_MSK_HAS_CONSTIT_FILTER(0x00400) |
+				TRWF_MSG_RPM_MSK_IND_PARTS_COMPL(0x00020) |
+				TRWF_MSG_RPM_MSK_IND_ALL_CONSTITS_COMPL(0x00800) -->
+	<Mask value="19048" />
+	<ResponseTypeNum value="1" />
+	<ResponseAction value="0" />
+	<ItemState>
+		<Mask value="0" />
+		<StreamState value="0" />
+		<DataState value="0" />
+		<StateCode value="0" />
+		<StateText value="" />
+		<ItemGroupID value="" />
+		<ItemGroupSeqNum value="0" />
+	</ItemState>
+	<PermissionInfo>
+		<Mask value="0" />
+		<PE value="0" />
+		<Data value="" />
+	</PermissionInfo>
+	<ItemSeqNum value="0" />
+	<ExchangeID value="" />
+	<ProviderID value="0" />
+	<ContextID value="0" />
+	<PartNum value="0" />
+	<ConstitNum value="1" />
+	<ConstitFilter value="2" />
+	<FieldListNum value="0" />
+	<ExtendedHeader value="" />
+</Message>

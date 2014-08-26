@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document case="lower" version="1.0">
+  <plugins>
+    <dll filename="Concurrency.dll"/>
+    <dll filename="MemoryFactory.dll"/>
+    <dll filename="Eventing.dll"/>
+    <dll filename="sharedstatisticsfactory.dll"/>
+    <dll filename="UDPReceiver.dll"/>
+    <dll filename="DatagramFrameFactory.dll"/>
+    <dll filename="ControlBus.dll"/>
+    <dll filename="ControlMessage.dll"/>
+    <dll filename="WinLatencySuite.dll"/>
+    <dll filename="DatagramToTRWF2Capsule.dll"/>
+    <dll filename="TRWF2CapsuleFactory.dll"/>
+    <dll filename="..\Bin\RsslListener.dll"/>
+    <dll filename="..\Bin\MessageRelay.dll"/>
+    <dll filename="..\Bin\ItemStub.dll"/>
+  </plugins>
+
+  <components>
+    <component name="MemoryFactory" type="MemoryFactory" phase="0"/>
+    <component name="StatisticsFactory" type="StatisticsFactory" phase="0">
+      <dependency type="@all"/>
+    </component>
+    <component name="DatagramFrameFactory" type="DatagramFrameFactory" phase="0"/>
+    <component name="ControlMessageFactory" type="controlmessagefactory" phase="0"/>
+    <component name="TimestampFactory" type="timestampfactory" phase="0"/>
+    <component name="EventManager" type="EventManager" phase="0">
+      <dependency name="EventLogger"/>
+    </component>
+    <component name="EventInfoRepository" type="EventInfoRepository" phase="0"/>
+    <component name="EventLogger" type="EventLogger" phase="0"/>
+    <component name="UDPReceiver1" type="udpreceiver" phase="1"/>
+    <component name="ControlBus" type="controlbus" phase="1"/>
+    <component name="TimestampProcessor" type="timestampprocessor" phase="1"/>
+    <component name="TRWF2CapsuleFactory" type="TRWF2CapsuleFactory" phase="0"/>
+    <component name="DatagramToTRWF2Capsule1" type="MTPFrameToTRWF2Capsule" phase="1"/>
+    <component name="RsslListener" type="RsslListener" phase="2">
+      <dependency name="ItemStub"/>
+    </component>
+    <component name="MessageRelay" type="MessageRelay" phase="3">
+      <dependency name="ItemStub"/>
+    </component>
+    <component name="ItemStub" type="ItemStub" phase="3">
+      <dependency name="RsslListener"/>
+    </component>
+  </components>
+
+  <threads>
+    <thread name="AppInfrastructureThread" type="BasicThread" phase="1"/>
+    <thread name="UDPReceptionThread1" type="BasicThread" phase="1"/>
+    <thread name="MessageProcessingThread1" type="BasicThread" phase="1"/>
+    <thread name="RsslEventLoopThread" type="BasicThread" phase="1"/>
+    <thread name="ItemStubThread" type="BasicThread" phase="1"/>
+  </threads>
+
+  <configurationfiles>
+    <file name="..\Config\VahHarnessConfig.xml" version="1.0"/>
+  </configurationfiles>
+
+  <globaldependencies>
+    <component name="MemoryFactory"/>
+    <component name="StatisticsFactory"/>
+    <component name="EventInfoRepository"/>
+    <component name="DatagramFrameFactory"/>
+    <component name="ControlMessageFactory"/>
+    <component name="TimestampFactory"/>
+    <component name="TRWF2CapsuleFactory"/>
+  </globaldependencies>
+
+  <structurefiles>
+  </structurefiles>
+
+  <signals>
+    <signal name="StatisticsGatheringSignal" type="CoarseTimerSignal" phase="1" time ="1000" thread="AppInfrastructureThread">
+      <sink component="StatisticsFactory" sinkname="BeginPublishStatsSink"/>
+    </signal>
+
+    <signal name="EventUpdateSignal" type="CoarseTimerSignal" phase="1" time ="1000" thread="AppInfrastructureThread">
+      <sink component="EventLogger" sinkname="EventTimerSink"/>
+    </signal>
+    <signal name="readdata" type="Signal" phase="1" triggeringcomponent="UDPReceiver1" thread="UDPReceptionThread1">
+      <sink component="UDPReceiver1" sinkname="readdatasink"/>
+    </signal>
+
+    <signal name="activatesignal" type="Signal" phase="1" triggeringcomponent="UDPReceiver1" thread="UDPReceptionThread1">
+      <sink component="UDPReceiver1" sinkname="activatesink"/>
+    </signal>
+
+    <signal name="deactivatesignal" type="Signal" phase="1" triggeringcomponent="UDPReceiver1" thread="UDPReceptionThread1">
+      <sink component="UDPReceiver1" sinkname="deactivatesink"/>
+    </signal>
+    <signal name="startlisteningsignal" type="Signal" phase="2"	triggeringcomponent="RsslListener" thread="RsslEventLoopThread">
+      <sink component="RsslListener" sinkname="startlisteningsink"/>
+    </signal>
+    <signal name="startitemstub" type="Signal" phase="3" triggeringcomponent="ItemStub" thread="ItemStubThread">
+      <sink component="ItemStub" sinkname="startitemstubsink"/>
+    </signal>
+    <signal name="RelayTickSignal" type="CoarseTimerSignal" phase="4" time = "10000" triggeringcomponent="MessageRelay" thread="AppInfrastructureThread">
+	    <sink component="MessageRelay" sinkname="TimerSink"/>
+    </signal>
+    <signal name="ListenerStatsSignal" type="CoarseTimerSignal" phase="4" time = "10000" triggeringcomponent="RsslListener" thread="AppInfrastructureThread">
+      <sink component="RsslListener" sinkname="OnStatsTimer"/>
+    </signal>
+  </signals>
+
+  <connections>
+    <connection from="::EventOutgoingSource" viachannel="LoggerChannel" thread="AppInfrastructureThread" to="EventManager::ReceiveEventSink"/>
+    <connection from="UDPReceiver1::outsource" viachannel="InputToProcessChannel" thread="MessageProcessingThread1" to="DatagramToTRWF2Capsule1::receiveframesink"/>
+    <connection from="DatagramToTRWF2Capsule1::outgoingtrwf2messagesource" viachannel="" to="MessageRelay::incomingdatasink"/>
+    <connection from="::ControlBusSource" viachannel="ControlBusChannel" thread="AppInfrastructureThread" to="ControlBus::controlbussink"/>
+  </connections>
+</document>
