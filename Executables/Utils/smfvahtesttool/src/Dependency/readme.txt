@@ -1,1 +1,0 @@
-the folders of 'include' and 'lib' are both used to hold external smf dependency files

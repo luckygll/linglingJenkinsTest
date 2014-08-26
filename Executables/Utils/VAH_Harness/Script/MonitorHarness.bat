@@ -1,1 +1,0 @@
-"..\QF\QuantumMonitor.exe"

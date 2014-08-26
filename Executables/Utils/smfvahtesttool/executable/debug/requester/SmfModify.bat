@@ -1,1 +1,0 @@
-call SmfRequester.exe 127.0.0.1 8603 ..//commandsfile ItemModifyUpdate.xml RespFromServer.xml replace 1
